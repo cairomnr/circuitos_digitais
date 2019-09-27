@@ -6,7 +6,7 @@ const byte LED2 = 12;
 const byte LEDRESP = 7;
 
 /**
- * Cabeçalho de funções.
+ * CabeÃ§alho de funÃ§Ãµes.
  */
 bool condNao(int);
 bool condE(int, int);
@@ -17,16 +17,17 @@ bool condOuExclusivo(int, int);
 bool condNaoOuExclusivo(int, int);
 
 /**
- * Responsável pela configuração inicial do arduino.
+ * ResponsÃ¡vel pela configuraÃ§Ã£o inicial do arduino.
  */
 void setup()
 {
-	pinMode(LED1, 	pinMode(LED2, OUTPUT);
+	pinMode(LED1, OUTPUT);
+	pinMode(LED2, OUTPUT);
 	pinMode(LEDRESP, OUTPUT);
 }
 
 /**
- * Laço principal de execução.
+ * LaÃ§o principal de execuÃ§Ã£o.
  */
 void loop()
 {
@@ -40,7 +41,7 @@ void loop()
 }
 
 /**
- * Acende os leds de acordo com a porta lógica "E".
+ * Acende os leds de acordo com a porta lÃ³gica "E".
  *
  * @param int entradas[][]
  */
@@ -60,7 +61,7 @@ void portaLogicaE(int entradas[][2]) {
 }
 
 /**
- * Acende os leds de acordo com a porta lógica "OU".
+ * Acende os leds de acordo com a porta lÃ³gica "OU".
  *
  * @param int entradas[][]
  */
@@ -80,7 +81,7 @@ void portaLogicaOu(int entradas[][2]) {
 }
 
 /**
- * Acende os leds de acordo com a porta lógica "NÃO E".
+ * Acende os leds de acordo com a porta lÃ³gica "NÃƒO E".
  *
  * @param int entradas[][]
  */
@@ -100,7 +101,7 @@ void portaLogicaNaoE(int entradas[][2]) {
 }
 
 /**
- * Acende os leds de acordo com a porta lógica "NÃO E".
+ * Acende os leds de acordo com a porta lÃ³gica "NÃƒO E".
  *
  * @param int entradas[][]
  */
@@ -120,7 +121,7 @@ void portaLogicaNaoOu(int entradas[][2]) {
 }
 
 /**
- * Acende os leds de acordo com a porta lógica "OU EXCLUSIVO".
+ * Acende os leds de acordo com a porta lÃ³gica "OU EXCLUSIVO".
  *
  * @param int entradas[][]
  */
@@ -141,7 +142,7 @@ void portaLogicaOuExclusico(int entradas[][2]) {
 
 
 /**
- * Acende os leds de acordo com a porta lógica "NÃO OU EXCLUSIVO".
+ * Acende os leds de acordo com a porta lÃ³gica "NÃƒO OU EXCLUSIVO".
  *
  * @param int entradas[][]
  */
@@ -161,7 +162,7 @@ void portaLogicaNaoOuExclusico(int entradas[][2]) {
 }
 
 /**
- * Realiza a verificação da condição "NAO" lógica.
+ * Realiza a verificaÃ§Ã£o da condiÃ§Ã£o "NAO" lÃ³gica.
  *
  * @param int entrada1
  * @param int entrada2
@@ -172,7 +173,7 @@ bool condNao(int entrada1) {
 }
 
 /**
- * Realiza a verificação da condição "E" lógica.
+ * Realiza a verificaÃ§Ã£o da condiÃ§Ã£o "E" lÃ³gica.
  *
  * @param int entrada1
  * @param int entrada2
@@ -183,7 +184,7 @@ bool condE(int entrada1, int entrada2) {
 }
 
 /**
- * Realiza a verificação da condição "OU" lógica.
+ * Realiza a verificaÃ§Ã£o da condiÃ§Ã£o "OU" lÃ³gica.
  *
  * @param int entrada1
  * @param int entrada2
@@ -194,7 +195,7 @@ bool condOu(int entrada1, int entrada2) {
 }
 
 /**
- * Realiza a verificação da condição "NAO E" lógica.
+ * Realiza a verificaÃ§Ã£o da condiÃ§Ã£o "NAO E" lÃ³gica.
  *
  * @param int entrada1
  * @param int entrada2
@@ -205,7 +206,7 @@ bool condNaoE(int entrada1, int entrada2) {
 }
 
 /**
- * Realiza a verificação da condição "NAO OU" lógica.
+ * Realiza a verificaÃ§Ã£o da condiÃ§Ã£o "NAO OU" lÃ³gica.
  *
  * @param int entrada1
  * @param int entrada2
@@ -216,7 +217,7 @@ bool condNaoOu(int entrada1, int entrada2) {
 }
 
 /**
- * Realiza a verificação da condição "OU EXCLUSIVO" lógica.
+ * Realiza a verificaÃ§Ã£o da condiÃ§Ã£o "OU EXCLUSIVO" lÃ³gica.
  *
  * @param int entrada1
  * @param int entrada2
@@ -227,7 +228,7 @@ bool condOuExclusivo(int entrada1, int entrada2) {
 }
 
 /**
- * Realiza a verificação da condição "NÃO OU EXCLUSIVO" lógica.
+ * Realiza a verificaÃ§Ã£o da condiÃ§Ã£o "NÃƒO OU EXCLUSIVO" lÃ³gica.
  *
  * @param int entrada1
  * @param int entrada2
